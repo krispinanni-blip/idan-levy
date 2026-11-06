@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>עידן לוי | Family Office Access &amp; Readiness</title>
+<meta name="description" content="עידן לוי מלווה חברות ויזמים בגישה לעולם ה־Family&nbsp;Offices וההון הפרטי: הבנת המשקיעים, איתור מקבלי החלטות והכנה לשיחות. כמעט 14 שנות ניסיון בינלאומי.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@300;400;500;600&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0f1f38;
+    --navy-2:#172a49;
+    --cream:#f6f2ea;
+    --paper:#fbf9f5;
+    --gold:#b08d57;
+    --gold-soft:#d9c4a0;
+    --green:#24433a;
+    --ink:#1b2333;
+    --muted:#5d6577;
+    --line:#e3dccf;
+    --max:1140px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Heebo",sans-serif;font-weight:300;color:var(--ink);background:var(--paper);line-height:1.75;font-size:17px}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+  h1,h2,h3{font-family:"Frank Ruhl Libre",serif;font-weight:500;line-height:1.25;color:var(--navy)}
+  .latin{font-family:"Cormorant Garamond",serif;direction:ltr;unicode-bidi:isolate}
+  .eyebrow{display:inline-block;font-family:"Cormorant Garamond",serif;letter-spacing:.18em;text-transform:uppercase;font-size:14px;color:var(--gold);direction:ltr;unicode-bidi:isolate;margin-bottom:18px}
+  .btn{display:inline-block;padding:15px 30px;font-family:"Heebo",sans-serif;font-weight:500;font-size:16px;border:1px solid var(--navy);transition:.25s}
+  .btn-primary{background:var(--navy);color:var(--cream)}
+  .btn-primary:hover{background:var(--gold);border-color:var(--gold)}
+  .btn-ghost{color:var(--navy)}
+  .btn-ghost:hover{background:var(--navy);color:var(--cream)}
+  .btn-gold{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+  .btn-gold:hover{background:var(--cream);border-color:var(--cream)}
+
+  /* header */
+  header{position:sticky;top:0;z-index:20;background:rgba(251,249,245,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:78px;gap:20px}
+  .logo{direction:ltr;text-align:left;line-height:1.1}
+  .logo b{display:block;font-family:"Cormorant Garamond",serif;font-weight:600;font-size:25px;letter-spacing:.24em;color:var(--navy)}
+  .logo span{display:block;font-family:"Cormorant Garamond",serif;font-size:12.5px;letter-spacing:.14em;color:var(--gold);text-transform:uppercase}
+  .nav ul{display:flex;list-style:none;gap:32px;font-size:15.5px;font-weight:400}
+  .nav ul a:hover{color:var(--gold)}
+  .nav .btn{padding:10px 20px;font-size:15px}
+
+  /* hero */
+  .hero{padding:90px 0 100px;background:var(--cream)}
+  .hero-grid{display:grid;grid-template-columns:1.25fr .9fr;gap:70px;align-items:center}
+  .hero h1{font-size:clamp(34px,4.4vw,54px);font-weight:500;margin-bottom:28px}
+  .hero h1 em{font-style:normal;color:var(--gold)}
+  .hero p.lead{font-size:19px;color:var(--muted);max-width:560px;margin-bottom:38px}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap}
+  .portrait{position:relative;aspect-ratio:1/1;background:var(--navy);display:flex;align-items:center;justify-content:center;overflow:hidden}
+  .portrait::after{content:"";position:absolute;inset:16px;border:1px solid rgba(217,196,160,.45);pointer-events:none}
+  .portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 25%;display:block}
+  .portrait .initials{font-family:"Cormorant Garamond",serif;font-size:88px;letter-spacing:.12em;color:var(--gold-soft);direction:ltr}
+  .portrait .note{position:absolute;bottom:34px;font-size:13px;color:rgba(246,242,234,.6)}
+
+  /* stats */
+  .stats{background:var(--navy);color:var(--cream);padding:54px 0}
+  .stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+  .stat{border-right:1px solid rgba(217,196,160,.35);padding-right:26px}
+  .stat:first-child{border-right:0;padding-right:0}
+  .stat .num{font-family:"Frank Ruhl Libre",serif;font-size:42px;color:var(--gold-soft);line-height:1.1;margin-bottom:8px}
+  .stat p{font-size:16px;color:rgba(246,242,234,.82)}
+
+  section{padding:110px 0}
+  .sec-head{max-width:720px;margin-bottom:60px}
+  .sec-head h2{font-size:clamp(28px,3.2vw,40px);margin-bottom:18px}
+  .sec-head p{font-size:18px;color:var(--muted)}
+
+  /* why */
+  .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}
+  .why h3{font-size:24px;margin-bottom:22px}
+  .benefits{list-style:none;display:grid;gap:16px}
+  .benefits li{padding:18px 22px;background:var(--cream);border-right:2px solid var(--gold)}
+  .benefits li strong{font-weight:500;color:var(--navy)}
+  .gaps{list-style:none;counter-reset:g}
+  .gaps li{counter-increment:g;padding:15px 0;border-bottom:1px solid var(--line);display:flex;gap:18px}
+  .gaps li::before{content:counter(g,decimal-leading-zero);font-family:"Cormorant Garamond",serif;color:var(--gold);font-size:18px;min-width:26px}
+  .bridge{margin-top:70px;padding:44px 50px;background:var(--navy);color:var(--cream);font-family:"Frank Ruhl Libre",serif;font-size:clamp(21px,2.3vw,28px);line-height:1.5}
+  .bridge span{color:var(--gold-soft)}
+
+  /* program */
+  .program{background:var(--cream)}
+  .format{display:flex;gap:40px;flex-wrap:wrap;margin-bottom:56px;padding:24px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .format div{font-size:16px;color:var(--muted)}
+  .format b{display:block;font-family:"Frank Ruhl Libre",serif;font-weight:500;font-size:24px;color:var(--navy)}
+  .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+  .pillar{background:var(--paper);padding:40px 34px;border-top:2px solid var(--gold)}
+  .pillar .n{font-family:"Cormorant Garamond",serif;font-size:40px;color:var(--gold);line-height:1;margin-bottom:18px}
+  .pillar h3{font-size:22px;margin-bottom:14px}
+  .pillar p{font-size:16px;color:var(--muted)}
+  .program-note{margin-top:46px;max-width:760px;font-size:18px}
+  .program-note strong{font-weight:500;color:var(--navy)}
+
+  /* readiness */
+  .readiness{background:var(--green);color:var(--cream)}
+  .readiness-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:70px;align-items:center}
+  .readiness h2{color:var(--cream);font-size:clamp(28px,3.2vw,40px);margin-bottom:18px}
+  .readiness .eyebrow{color:var(--gold-soft)}
+  .readiness p{color:rgba(246,242,234,.85);font-size:18px;margin-bottom:34px}
+  .get{list-style:none;display:grid;gap:14px}
+  .get li{padding:22px 26px;border:1px solid rgba(217,196,160,.4);display:flex;gap:18px;align-items:baseline}
+  .get li span{font-family:"Cormorant Garamond",serif;color:var(--gold-soft);font-size:20px}
+  .get li b{font-weight:500;display:block;font-size:18px}
+  .get li small{font-size:15px;color:rgba(246,242,234,.7)}
+
+  /* about */
+  .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:80px;align-items:start}
+  .about-side{position:sticky;top:110px}
+  .about-side h2{font-size:clamp(28px,3.2vw,40px);margin-bottom:22px}
+  .about-side .quote{font-family:"Frank Ruhl Libre",serif;font-size:21px;color:var(--gold);line-height:1.55;padding-right:20px;border-right:2px solid var(--gold)}
+  .about-body p{margin-bottom:22px;font-size:17.5px}
+  .about-body h3{font-size:22px;margin:38px 0 14px}
+  .clarify{margin-top:34px;padding:22px 26px;background:var(--cream);font-size:16px;color:var(--muted)}
+
+  /* talks */
+  .talks{background:var(--cream);padding:90px 0}
+  .talks-row{display:flex;justify-content:space-between;align-items:center;gap:40px;flex-wrap:wrap}
+  .talks h2{font-size:clamp(26px,2.8vw,34px);margin-bottom:12px}
+  .talks p{color:var(--muted);max-width:640px}
+
+  /* faq */
+  .faq-list{max-width:820px}
+  details{border-bottom:1px solid var(--line)}
+  summary{list-style:none;cursor:pointer;padding:24px 0;font-family:"Frank Ruhl Libre",serif;font-size:20px;color:var(--navy);display:flex;justify-content:space-between;gap:20px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-family:"Heebo",sans-serif;font-weight:300;color:var(--gold);font-size:26px;line-height:1}
+  details[open] summary::after{content:"−"}
+  details p{padding:0 0 26px;color:var(--muted);max-width:720px}
+
+  /* contact */
+  .contact{background:var(--navy);color:var(--cream);text-align:center}
+  .contact h2{color:var(--cream);font-size:clamp(28px,3.4vw,44px);margin-bottom:18px}
+  .contact .eyebrow{color:var(--gold-soft)}
+  .contact p.lead{color:rgba(246,242,234,.8);font-size:18px;max-width:620px;margin:0 auto 40px}
+  .contact .cta-row{justify-content:center;margin-bottom:60px}
+  .channels{display:flex;justify-content:center;gap:50px;flex-wrap:wrap;padding-top:40px;border-top:1px solid rgba(217,196,160,.25)}
+  .channels a{display:block;font-size:16px;color:rgba(246,242,234,.85)}
+  .channels a small{display:block;font-family:"Cormorant Garamond",serif;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-soft);font-size:13px}
+  .channels a:hover{color:var(--gold-soft)}
+  footer{background:#0a1628;color:rgba(246,242,234,.55);font-size:13.5px;padding:28px 0;text-align:center}
+  footer p{max-width:760px;margin:0 auto 6px}
+
+  @media (max-width:900px){
+    .nav ul{display:none}
+    .hero{padding:50px 0 70px}
+    .hero-grid,.why-grid,.readiness-grid,.about-grid{grid-template-columns:1fr;gap:44px}
+    .portrait{max-width:300px;width:100%;margin:0 auto}
+    .pillars{grid-template-columns:1fr}
+    .stats-grid{grid-template-columns:1fr;gap:26px}
+    .stat,.stat:first-child{border-right:0;padding-right:0;border-bottom:1px solid rgba(217,196,160,.25);padding-bottom:22px}
+    .stat:last-child{border-bottom:0;padding-bottom:0}
+    section{padding:76px 0}
+    .about-side{position:static}
+    .bridge{padding:32px 26px}
+  }
+  @media (max-width:520px){
+    .wrap{padding:0 16px}
+    body{font-size:16px}
+    .nav{height:68px}
+    .logo b{font-size:20px;letter-spacing:.18em}
+    .logo span{font-size:10.5px;letter-spacing:.08em}
+    .nav .btn{padding:9px 14px;font-size:14px}
+    .cta-row .btn{width:100%;text-align:center}
+    .channels{gap:26px;flex-direction:column}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="logo" aria-label="Idan Levy">
+      <b>IDAN LEVY</b>
+      <span>Family Office Access &amp; Readiness</span>
+    </a>
+    <ul>
+      <li><a href="#why">למה Family&nbsp;Offices</a></li>
+      <li><a href="#program">תוכנית הליווי</a></li>
+      <li><a href="#about">על עידן</a></li>
+      <li><a href="#faq">שאלות נפוצות</a></li>
+    </ul>
+    <a href="#readiness" class="btn btn-primary">מבדק מוכנות</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Family Office Access &amp; Readiness</span>
+        <h1>להכיר את המשקיעים הנכונים.<br>להבין כיצד הם חושבים.<br><em>לדעת איך להגיע אליהם.</em></h1>
+        <p class="lead">ליווי אישי לחברות ויזמים: ידע, אסטרטגיה וכלים מעשיים להבנת עולם ה־Family&nbsp;Offices, לזיהוי משקיעים מתאימים, להגעה למקבלי ההחלטות ולניהול תהליך מקצועי מולם.</p>
+        <div class="cta-row">
+          <a href="#readiness" class="btn btn-primary">למבדק מוכנות ללא עלות</a>
+          <a href="#program" class="btn btn-ghost">על תוכנית הליווי</a>
+        </div>
+      </div>
+      <div class="portrait">
+        <span class="initials">I·L</span>
+        <span class="note">כאן תיכנס תמונת הפורטרט</span>
+        <!-- התמונה נטענת מ-idan.jpg באותה תיקייה; אם הקובץ חסר, נשארים ראשי התיבות -->
+        <img src="idan.jpg" alt="עידן לוי" onerror="this.remove()">
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="wrap stats-grid">
+      <div class="stat">
+        <div class="num">כמעט 14</div>
+        <p>שנות ניסיון בעולם ה־Family&nbsp;Offices וההון הפרטי</p>
+      </div>
+      <div class="stat">
+        <div class="num">מאות</div>
+        <p>Family&nbsp;Offices ומשקיעים פרטיים שעבדתי מולם</p>
+      </div>
+      <div class="stat">
+        <div class="num">4 זירות</div>
+        <p>צפון אמריקה, אירופה, אסיה והמזרח התיכון</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHY -->
+  <section id="why" class="why">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Why Family&nbsp;Offices</span>
+        <h2>ערוץ הון ושותפויות שכדאי להכיר ולבחון ברצינות</h2>
+        <p>הון הוא אחד המשאבים החשובים ביותר לצמיחה של חברה, ועולם ה־Family&nbsp;Offices הוא מקור משמעותי להון פרטי ולשותפויות אסטרטגיות.</p>
+      </div>
+      <div class="why-grid">
+        <div>
+          <h3>מה Family&nbsp;Offices יכולים להביא</h3>
+          <ul class="benefits">
+            <li><strong>גמישות</strong> במבנה ההשקעה ובאופי השותפות</li>
+            <li><strong>אופק השקעה ארוך</strong>, מעבר ללחץ של מחזורי קרן</li>
+            <li><strong>קשרים עסקיים</strong> וגישה לשווקים חדשים</li>
+            <li><strong>ניסיון ניהולי</strong> של משפחות שבנו עסקים בעצמן</li>
+            <li><strong>מעורבות בשלבים שונים</strong>, מהשלבים המוקדמים ועד התרחבות משמעותית</li>
+          </ul>
+        </div>
+        <div>
+          <h3>אבל הגישה לעולם הזה מורכבת</h3>
+          <ul class="gaps">
+            <li>אילו Family&nbsp;Offices מתאימים לחברה שלכם</li>
+            <li>היכן לחפש אותם ואיך לבדוק השקעות קודמות</li>
+            <li>כיצד לאתר את מקבלי ההחלטות</li>
+            <li>איך לפנות בצורה שתעורר עניין אמיתי</li>
+            <li>כיצד להתנהל אחרי שנוצר הקשר</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bridge">רעיון טוב ומצגת מרשימה הם רק נקודת ההתחלה. <span>אני הופך עולם שנראה לרבים סגור ולא נגיש לתהליך עבודה ברור, ממוקד ומעשי.</span></div>
+    </div>
+  </section>
+
+  <!-- PROGRAM -->
+  <section id="program" class="program">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">The Program</span>
+        <h2>Family Office Access &amp; Readiness<br>תוכנית ליווי אישית לחברות</h2>
+        <p>תהליך מעשי וממוקד, המותאם לחברה שלכם ולשלב שבו היא נמצאת.</p>
+      </div>
+      <div class="format">
+        <div><b>3 מפגשים</b>אישיים</div>
+        <div><b>כ־85 דקות</b>כל מפגש</div>
+        <div><b>אונליין</b>בתיאום לאזור הזמן שלכם</div>
+        <div><b>30 יום</b>תוכנית עבודה בסיום</div>
+      </div>
+      <div class="pillars">
+        <div class="pillar">
+          <div class="n">01</div>
+          <h3>הבנת המשקיעים ומיצוב החברה</h3>
+          <p>כיצד Family&nbsp;Offices פועלים, איך הם בוחנים הזדמנויות, וכיצד להציג את החברה בצורה שתהיה רלוונטית עבורם.</p>
+        </div>
+        <div class="pillar">
+          <div class="n">02</div>
+          <h3>איתור משקיעים ויצירת גישה</h3>
+          <p>חיפוש Family&nbsp;Offices, בדיקת השקעות קודמות וזיהוי התאמה. איתור מקבלי החלטות, בניית דרכי היכרות וניסוח פניות אישיות וממוקדות.</p>
+        </div>
+        <div class="pillar">
+          <div class="n">03</div>
+          <h3>הכנה לשיחות עם משקיעים</h3>
+          <p>סימולציה של פגישה, תרגול שאלות והתנגדויות, בניית Follow-up וגיבוש תוכנית עבודה ל־30 יום.</p>
+        </div>
+      </div>
+      <p class="program-note"><strong>עובדים על החברה שלכם, לא על חברה דמיונית.</strong> הדגש הוא על עבודה מעשית על האתגרים והמטרות האמיתיים שלכם, כדי שתצאו עם יכולת עצמאית לעבוד מול משקיעים מהעולם הזה.</p>
+    </div>
+  </section>
+
+  <!-- READINESS CHECK -->
+  <section id="readiness" class="readiness">
+    <div class="wrap readiness-grid">
+      <div>
+        <span class="eyebrow">Family Office Readiness Check</span>
+        <h2>מבדק מוכנות, ללא עלות</h2>
+        <p>שאלון קצר של כשלוש דקות: ספרו על הפעילות שלכם, על המטרות ועל מה שניסיתם עד היום מול משקיעים. אחרי שאעבור על התשובות, תקבלו ממני התייחסות אישית.</p>
+        <!-- להחליף בקישור לטופס המוכנות הקיים של עידן -->
+        <a href="READINESS_FORM_URL" class="btn btn-gold" id="readiness-link">להתחלת המבדק</a>
+      </div>
+      <ul class="get">
+        <li><span>01</span><div><b>נקודת חוזקה</b><small>מה כבר עובד לטובתכם מול משקיעים</small></div></li>
+        <li><span>02</span><div><b>פער משמעותי</b><small>מה כדאי לחזק לפני שפונים</small></div></li>
+        <li><span>03</span><div><b>המלצה מעשית</b><small>הצעד הבא שכדאי לעשות</small></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="about-side">
+        <span class="eyebrow">About Idan</span>
+        <h2>עידן לוי</h2>
+        <p class="quote">ניסיון מעשי מבפנים, משני צדי השולחן: איך משקיעים חושבים, ומה באמת עוצר חברות בדרך אליהם.</p>
+      </div>
+      <div class="about-body">
+        <p>כמעט 14 שנים אני פועל בעולם ה־Family&nbsp;Offices והמשקיעים הפרטיים הבינלאומיים, בתפקידים ניהוליים בכירים. לאורך השנים עבדתי מול מאות Family&nbsp;Offices ומשקיעים פרטיים, לצד חברות, קרנות, יזמים ובעלי עסקים, ונחשפתי באופן ישיר לתהליכי ההיכרות, ההצגה והתקשורת שבין חברות למשקיעים.</p>
+        <p>בשנים האלה ראיתי פער שחוזר על עצמו: חברות איכותיות, עם פעילות מרשימה ופוטנציאל עסקי אמיתי, שאינן יודעות כיצד לגשת לעולם הזה. לעיתים הבעיה אינה בהזדמנות עצמה, אלא בחוסר היכרות עם המשקיעים, בבחירת הגורמים הלא נכונים, בפנייה שאינה מותאמת או בחוסר הבנה של התהליך.</p>
+        <p>מתוך הניסיון הזה החלטתי להעביר לחברות את הידע המעשי שצברתי, ולעזור להן לפעול באופן עצמאי ומקצועי מול מקורות הון פרטיים.</p>
+        <h3>מה אני מביא איתי</h3>
+        <p>היכרות ישירה וממושכת עם עולם המשקיעים, לצד אלפי קשרים מקצועיים עם חברות, מנהלים וגופים עסקיים, בעיקר מעולם הטכנולוגיה וגם מתחומים רבים נוספים. אני מכיר את החשיבות של התאמה בין חברה למשקיע, את הדרכים שבהן נבנים קשרים, ואת הטעויות שעלולות לעצור שיחה עוד לפני שהתחילה.</p>
+        <p>הרקע שלי מסחרי, עסקי ובינלאומי, ומבוסס על שנים של עבודה בשטח, לא רק על ידע תיאורטי, קורסים או מחקר.</p>
+        <div class="clarify">חשוב לדעת: אינני מנהל כספים עבור לקוחות ואינני גורם מגייס הון מטעמם. התוכנית מעניקה לחברה את הידע, השיטה והכלים לעבוד מול משקיעים בעצמה.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TALKS -->
+  <div class="talks">
+    <div class="wrap talks-row">
+      <div>
+        <span class="eyebrow">Talks &amp; Workshops</span>
+        <h2>הרצאות וסדנאות לארגונים</h2>
+        <p>לחברות, חממות, אקסלרטורים, מרכזי חדשנות וארגונים עסקיים: הרצאות וסדנאות על עולם ה־Family&nbsp;Offices ועל דרכי הגישה אליו.</p>
+      </div>
+      <a href="mailto:idanlevy.ten@gmail.com?subject=%D7%94%D7%A8%D7%A6%D7%90%D7%94%20%2F%20%D7%A1%D7%93%D7%A0%D7%94" class="btn btn-ghost">לתיאום הרצאה</a>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">FAQ</span>
+        <h2>שאלות נפוצות</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>מה זה Family Office?</summary>
+          <p>גוף שמנהל את ההון וההשקעות של משפחה בעלת הון משמעותי. חלק מהגופים האלה משקיעים ישירות בחברות פרטיות, לצד תחומי השקעה נוספים.</p>
+        </details>
+        <details>
+          <summary>למי התהליך מתאים?</summary>
+          <p>לחברות ויזמים שרוצים לבחון גישה למקורות הון פרטיים וללמוד לעבוד מולם בצורה מקצועית: מייסדים, מנכ"לים, מנהלי פיתוח עסקי ומנהלי כספים, בסטארטאפים, בחברות טכנולוגיה, בחברות תעשייתיות ובחברות צומחות מתחומים נוספים.</p>
+        </details>
+        <details>
+          <summary>האם זה מתאים גם לסטארטאפים בתחילת הדרך?</summary>
+          <p>כן. אנחנו בוחנים את השלב שבו החברה נמצאת, את אופי הפעילות ואת סוג המשקיעים שעשויים להתאים לה.</p>
+        </details>
+        <details>
+          <summary>האם אתה מוצא עבורנו משקיעים?</summary>
+          <p>התוכנית מעניקה לחברה את השיטה והכלים לאתר משקיעים ולפנות אליהם בעצמה. זו תוכנית ליווי מעשית, ולא שירות חיצוני של ניהול גיוס הון.</p>
+        </details>
+        <details>
+          <summary>מה כולל הליווי?</summary>
+          <p>שלושה מפגשי אונליין אישיים של כ־85 דקות, שבמהלכם עובדים על מיצוב החברה, איתור משקיעים, פניות מותאמות והכנה לשיחות, ובסיומם תוכנית עבודה ל־30 יום.</p>
+        </details>
+        <details>
+          <summary>האם צריך ניסיון קודם בגיוס הון?</summary>
+          <p>לא. התהליך מותאם לרקע ולשלב של החברה.</p>
+        </details>
+        <details>
+          <summary>כמה עולה הליווי?</summary>
+          <p>המחיר נקבע בהתאם לשלב החברה, לצרכים ולמורכבות העבודה. הפרטים נמסרים לאחר בחינת התאמה ראשונית.</p>
+        </details>
+        <details>
+          <summary>אפשר לעבוד באנגלית?</summary>
+          <p>כן. הליווי מתאים גם לחברות ולצוותים בינלאומיים, והמפגשים יכולים להתקיים באנגלית.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <span class="eyebrow">Get in Touch</span>
+      <h2>הצעד הראשון: לבדוק איפה אתם עומדים</h2>
+      <p class="lead">מבדק המוכנות הוא הדרך הפשוטה להבין אם נכון לכם להעמיק בתהליך. אפשר גם לפנות אליי ישירות.</p>
+      <div class="cta-row">
+        <a href="#readiness" class="btn btn-gold">למבדק מוכנות ללא עלות</a>
+      </div>
+      <div class="channels">
+        <a href="https://www.linkedin.com/in/idan-levy-80a87395/" target="_blank" rel="noopener"><small>LinkedIn</small>Idan Levy</a>
+        <a href="mailto:idanlevy.ten@gmail.com"><small>Email</small><span class="latin" style="font-family:Heebo">idanlevy.ten@gmail.com</span></a>
+        <a href="https://wa.me/972544947627" target="_blank" rel="noopener"><small>WhatsApp</small>054-4947627</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 Idan Levy · Family Office Access &amp; Readiness</p>
+    <p>התוכן באתר והליווי המקצועי אינם מהווים ייעוץ השקעות, שיווק השקעות או הצעה לגיוס הון.</p>
+  </div>
+</footer>
+
+</body>
+</html>
